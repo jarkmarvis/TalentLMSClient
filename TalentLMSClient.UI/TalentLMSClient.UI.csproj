@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <StaticWebAssetBasePath>App_Plugins/TalentLMSClient.UI</StaticWebAssetBasePath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>TalentLMSClient.UI</PackageId>
+    <Product>TalentLMSClient.UI</Product>
+    <Title>TalentLMSClient.UI</Title>
+    <Description>...</Description>
+    <PackageTags>umbraco plugin package</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="12.0.0" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TalentLMSClient.Application\TalentLMSClient.Application.csproj" />
+    <ProjectReference Include="..\TalentLMSClient.Infrastructure\TalentLMSClient.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
