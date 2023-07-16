@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
@@ -13,6 +13,7 @@
     <Title>TalentLMSClient.UI</Title>
     <Description>...</Description>
     <PackageTags>umbraco plugin package</PackageTags>
+    <UserSecretsId>3baa16ec-833f-4a91-85ca-2aad0d65f93a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,12 +21,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="12.0.0" />
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="12.0.1" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TalentLMSClient.Application\TalentLMSClient.Application.csproj" />
     <ProjectReference Include="..\TalentLMSClient.Infrastructure\TalentLMSClient.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

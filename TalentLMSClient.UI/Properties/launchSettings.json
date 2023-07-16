@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TalentLMSClient.UI": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ApiKey": "Qne3Udx6DVc6N5jLkj9fvM3NkA1kQN"
+      }
+    }
+  }
+}

@@ -3,8 +3,9 @@
 /// <summary>
 /// Provides an abstraction for making requests to external API sources
 /// </summary>
-public interface IExternalAPIService
+public interface REM_IExternalAPIService
 {
+    //ToDo: Remove this method 
     /// <summary>
     /// Perform a GET action on the supplied URI
     /// </summary>
